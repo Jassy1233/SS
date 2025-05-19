@@ -1,113 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verano Azul</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/slide.js" defer></script>
+    <script src="../JS/movil.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Verano Azul</title>
-  <link rel="stylesheet" href="../CSS/style.css" />
-  <script src="../JS/slide.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
+  <body>
+    <nav>
+      <div class="logo">Verano Azul</div>
+      <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="#about">Sobre nosotros</a></li>
+        <li><a href="#program">Programa</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav>
-    <div class="logo">Verano Azul</div>
-    <ul class="nav-links">
-      <li><a href="#about">Sobre nosotros</a></li>
-      <li><a href="#program">Programa</a></li>
-      <li><a href="#contact">Contacto</a></li>
-    </ul>
-  </nav>
+    <section class="hero">
+      <div class="hero-text">
+        <h1>¡Vive el mejor verano de tu vida!</h1>
+        <p>Aprende, juega y haz nuevos amigos en la costa.</p>
+        <p>Summer School Verano Azul te espera.</p>
 
-<section class="hero">
-  <div class="hero-text">
-  <h1>¡Vive el mejor verano de tu vida!</h1>
-  <p>Aprende, juega y haz nuevos amigos en la costa.</p>
-  <p>Summer School Verano Azul te espera.</p>
+        <ul class="hero-benefits">
+          <li>🌞 Diversión garantizada</li>
+          <li>🎨 Actividades divertidas</li>
+          <li>🏖️ Haz nuevos amigos</li>
+          <li>🧠 Estimula la creatividad</li>
+          <li>🍎 Mejora tus notas</li>
+          <li>🛡️ Entorno seguro</li>
+          <li>🏊 Actividades acuáticas</li>
+          <li>🕒 Horarios flexibles</li>
+        </ul>
 
-  <ul class="hero-benefits">
-  <li>🌞 Diversión garantizada</li>
-  <li>🎨 Actividades divertidas</li>
-  <li>🏖️ Haz nuevos amigos</li>
-  <li>🧠 Estimula la creatividad</li>
-  <li>🍎 Meriendas saludables</li>
-  <li>🛡️ Entorno seguro</li>
-  <li>🏊 Actividades acuáticas</li>
-  <li>🕒 Horarios flexibles</li>
-  </ul>
+        <a href="#inscripcion" class="cta-button">¡Reserva tu plaza ahora!</a>
 
-  <a href="#inscripcion" class="cta-button">¡Reserva tu plaza ahora!</a>
+        <!---- <blockquote class="testimonial">
+          “Mi hijo espera todo el año para volver. ¡Gracias Verano Azul!”
+          <span>– Marta, mamá de Lucas (8 años)</span>
+        </blockquote> -->
 
-  <blockquote class="testimonial">
-    “Mi hijo espera todo el año para volver. ¡Gracias Verano Azul!”
-    <span>– Marta, mamá de Lucas (8 años)</span>
-  </blockquote>
-
-  <div class="social-links">
-    <a href="https://instagram.com/tu_escuela" target="_blank" aria-label="Instagram">
-      <i class="fab fa-instagram"></i>
-    </a>
-    <a href="https://facebook.com/tu_escuela" target="_blank" aria-label="Facebook">
-      <i class="fab fa-facebook"></i>
-    </a>
-    <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
-</div>
-
-  <!-- Slide con flechas a los lados -->
-  <div class="slider-wrapper">
-    <button class="nav-arrow left">&#10094;</button>
-
-    <div class="hero-slider">
-      <div class="slide active">
-        <img src="../IMG/Campo.jpeg" alt="niños jugando en la playa" />
+        <div class="social-links">
+          <a
+            href="https://instagram.com/tu_escuela"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://facebook.com/tu_escuela"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
       </div>
-      <div class="slide">
-        <img src="../IMG/Casa.jpeg" alt="clase al aire libre" />
+
+      <!-- Slide con flechas a los lados -->
+      <div class="slider-wrapper">
+        <button class="nav-arrow left">&#10094;</button>
+
+        <div class="hero-slider">
+          <div class="slide active">
+            <img src="../IMG/Campo.jpeg" alt="niños jugando en la playa" />
+          </div>
+          <div class="slide">
+            <img src="../IMG/Casa.jpeg" alt="clase al aire libre" />
+          </div>
+          <div class="slide">
+            <img
+              src="../IMG/WhatsApp Image 2025-05-19 at 10.30.00.jpeg"
+              alt="taller creativo de verano"
+            />
+          </div>
+        </div>
+
+        <button class="nav-arrow right">&#10095;</button>
       </div>
-      <div class="slide">
-        <img src="../IMG/WhatsApp Image 2025-05-19 at 10.30.00.jpeg" alt="taller creativo de verano" />
+    </section>
+
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-logo">Summer School Verano Azul</p>
+
+        <div class="footer-links">
+          <a href="#">Aviso legal</a>
+          <a href="#">Política de privacidad</a>
+          <a href="mailto:contacto@veranoazul.com">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://instagram.com/tu_escuela"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://facebook.com/tu_escuela"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <p class="copyright">
+          © 2025 Summer School Verano Azul. Todos los derechos reservados.
+        </p>
       </div>
-    </div>
-
-    <button class="nav-arrow right">&#10095;</button>
-  </div>
-</section>
-
-<footer class="site-footer">
-  <div class="footer-content">
-    <p class="footer-logo">Summer School Verano Azul</p>
-
-    <div class="footer-links">
-      <a href="#">Aviso legal</a>
-      <a href="#">Política de privacidad</a>
-      <a href="mailto:contacto@veranoazul.com">Contacto</a>
-    </div>
-
-    <div class="footer-social">
-      <a href="https://instagram.com/tu_escuela" target="_blank" aria-label="Instagram">
-        <i class="fab fa-instagram"></i>
-      </a>
-      <a href="https://facebook.com/tu_escuela" target="_blank" aria-label="Facebook">
-        <i class="fab fa-facebook"></i>
-      </a>
-      <a href="https://wa.me/1234567890" target="_blank" aria-label="WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-      </a>
-    </div>
-
-    <p class="copyright">
-      © 2025 Summer School Verano Azul. Todos los derechos reservados.
-    </p>
-  </div>
-</footer>
-
-
-</body>
-
+    </footer>
+  </body>
 </html>
