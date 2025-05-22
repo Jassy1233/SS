@@ -624,7 +624,6 @@ nav {
 }
 
 /*Seccion 1*/
-/* Info Section Styles */
 .info-verano {
   padding: 4rem 5%;
   background: linear-gradient(135deg, rgba(240, 248, 255, 0.9), rgba(224, 242, 254, 0.9));
@@ -678,7 +677,7 @@ nav {
 }
 
 .benefit-card h3 {
-  color: var(--dark);
+  color: var(--secondary);
   font-family: 'Baloo 2', cursive;
   margin-bottom: 1rem;
   font-size: 1.4rem;
@@ -700,7 +699,7 @@ nav {
 }
 
 .highlight {
-  color: var(--primary);
+  color: var(--secondary);
   font-weight: 700;
 }
 
@@ -759,7 +758,6 @@ nav {
   font-size: 1rem;
 }
 
-/* Wave Effect */
 .wave-effect {
   position: relative;
   overflow: hidden;
@@ -867,12 +865,6 @@ nav {
 
 .footer-logo span {
   color: var(--primary);
-}
-
-.footer-logo:after {
-  content: "🏄‍♂️";
-  margin-left: 10px;
-  font-size: 1.5rem;
 }
 
 .footer-about p {
