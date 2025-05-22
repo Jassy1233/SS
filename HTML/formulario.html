@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verano de la Vega - Formulario</title>
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <script src="../JS/slide.js" defer></script>
+    <script src="../JS/movil.js" defer></script>
+    <script src="../JS/formulario.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Verano de la Vega</div>
+      <button class="hamburger" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="horario.html">Horario</a></li>
+      </ul>
+    </nav>
+    <main class="form-section">
+      <div class="form-container">
+        <div class="form-header">
+          <h1 class="form-title">📝 Inscripción 2025</h1>
+          <p class="form-subtitle">
+            Completa el formulario para reservar tu plaza
+          </p>
+        </div>
+
+        <form class="contact-form" id="inscripcionForm">
+          <div class="form-grid">
+            <!-- Información del alumno -->
+            <div class="form-group">
+              <label for="nombre">Nombre completo del alumno</label>
+              <input
+                type="text"
+                id="Nombre"
+                name="Nombre"
+                required
+                placeholder="Ej: María García López"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="edad">Edad</label>
+              <input
+                type="number"
+                id="Edad"
+                name="Edad"
+                min="3"
+                max="14"
+                required
+                placeholder="Entre 3 y 14 años"
+              />
+            </div>
+
+            <!-- Información del tutor -->
+            <div class="form-group">
+              <label for="tutor">Nombre del tutor</label>
+              <input
+                type="text"
+                id="Tutor"
+                name="Tutor"
+                required
+                placeholder="Ej: Juan Pérez Martínez"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email de contacto</label>
+              <input
+                type="email"
+                id="Email"
+                name="Email"
+                required
+                placeholder="tunombre@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input
+                type="tel"
+                id="Telefono"
+                name="Telefono"
+                pattern="[0-9]{9}"
+                required
+                placeholder="Ej: 612345678"
+              />
+            </div>
+
+            <!-- Selectores -->
+            <div class="form-group">
+              <label for="periodo">Periodo de inscripción</label>
+              <select id="Periodo" name="Periodo" required>
+                <option value="" disabled selected>Selecciona un mes</option>
+                <option value="junio">Junio completo</option>
+                <option value="julio">Julio completo</option>
+                <option value="agosto">Agosto completo</option>
+                <option value="personalizado">Fechas personalizadas</option>
+              </select>
+            </div>
+
+            <!-- Observaciones -->
+            <div class="form-group full-width">
+              <label for="observaciones">✏️ Observaciones adicionales</label>
+              <textarea
+                id="Observaciones"
+                name="Observaciones"
+                placeholder="Alergias, necesidades especiales, etc..."
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="cta-button submit-btn">
+              <i class="fas fa-paper-plane"></i> &nbsp; Enviar solicitud
+            </button>
+          </div>
+        </form>
+
+        <!-- Mensaje de éxito (oculto inicialmente) -->
+        <div class="success-message" id="successMessage">
+          <div class="success-icon">✓</div>
+          <h2>¡Inscripción recibida!</h2>
+          <p>Nos pondremos en contacto contigo en menos de 24 horas.</p>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p class="footer-logo">Summer School Verano de la Vega</p>
+
+        <div class="footer-links">
+          <a href="#">Aviso legal</a>
+          <a href="#">Política de privacidad</a>
+          <a href="mailto:contacto@veranoazul.com">Contacto</a>
+        </div>
+
+        <div class="footer-social">
+          <a
+            href="https://instagram.com/tu_escuela"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://facebook.com/tu_escuela"
+            target="_blank"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook"></i>
+          </a>
+          <a
+            href="https://wa.me/1234567890"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+
+        <p class="copyright">
+          © 2025 Summer School Verano de la Vega. Todos los derechos reservados.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
