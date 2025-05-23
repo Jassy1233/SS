@@ -1394,22 +1394,6 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
   transform: translateY(-3px) scale(1.05);
 }
 
-.success-message {
-  display: none;
-  text-align: center;
-  padding: 2rem;
-  background: rgba(6, 214, 160, 0.1);
-  border-radius: 15px;
-  margin-top: 2rem;
-}
-
-.success-icon {
-  font-size: 3rem;
-  color: var(--success);
-  margin-bottom: 1rem;
-  animation: bounce 1s ease;
-}
-
 @keyframes bounce {
   0%,
   100% {
