@@ -1417,3 +1417,81 @@ input[type="checkbox"]:checked + .custom-checkbox::after {
     font-size: 2rem;
   }
 }
+
+.pricing-table-section {
+  margin: 3rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.pricing-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-table th,
+.pricing-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+  font-size: 1rem;
+}
+
+.pricing-table thead {
+  background-color: #f3faff;
+  color: #0a8fbf;
+  font-weight: bold;
+}
+
+.pricing-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.pricing-table td:first-child {
+  text-align: left;
+  font-weight: 500;
+}
+
+@media (max-width: 700px) {
+  .pricing-table thead {
+    display: none;
+  }
+
+  .pricing-table,
+  .pricing-table tbody,
+  .pricing-table tr,
+  .pricing-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .pricing-table tr {
+    margin-bottom: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+    padding: 1rem;
+  }
+
+  .pricing-table td {
+    border: none;
+    padding: 0.5rem 0;
+    text-align: left;
+    position: relative;
+    font-size: 1rem;
+  }
+
+  .pricing-table td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    color: #0a8fbf;
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+}
