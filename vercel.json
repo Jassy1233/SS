@@ -1,6 +1,6 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/HTML/index.html" },
-    { "source":"/horario", "destination": "HTML/horario.html"}
+    { "source":"/horario", "destination": "/HTML/horario.html"}
   ]
 }
