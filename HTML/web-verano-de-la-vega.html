@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Verano de la Vega — Campamento de Verano para Niños</title>
+<meta name="description" content="Campamento de verano para niños de 5 a 14 años. Refuerzo escolar, talleres culturales, Python, piscina con tobogán y fútbol. ¡Apúntate ya!">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/CSS/style.css">
+<script src="/JS/index.js"></script>
+</head>
+<body>
+
+<!-- MOBILE MENU -->
+<div class="mobile-menu" id="mm">
+  <button class="mobile-close" onclick="closeMM()">✕</button>
+  <a href="#nosotros" onclick="closeMM()">Sobre nosotros</a>
+  <a href="#actividades" onclick="closeMM()">Actividades</a>
+  <a href="#galeria" onclick="closeMM()">Galería</a>
+  <a href="#horario" onclick="closeMM()">Horario</a>
+  <a href="#precios" onclick="closeMM()">Precios</a>
+  <a href="#contacto" onclick="closeMM()">Contacto</a>
+</div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo"><span class="sun-spin">☀️</span> Verano de la Vega</a>
+  <ul class="nav-links">
+    <li><a href="#nosotros">Sobre nosotros</a></li>
+    <li><a href="#actividades">Actividades</a></li>
+    <li><a href="#galeria">Galería</a></li>
+    <li><a href="#horario">Horario</a></li>
+    <li><a href="#precios">Precios</a></li>
+    <li><a href="#contacto" class="nav-cta">Contacto</a></li>
+  </ul>
+  <button class="hamburger" onclick="openMM()"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="hero-glow"></div>
+  <div class="hero-rays"></div>
+  <span class="float-el">🌊</span>
+  <span class="float-el">⭐</span>
+  <span class="float-el">🎭</span>
+  <span class="float-el">🏖️</span>
+  <div class="hero-content">
+    <div class="hero-badge">☀️ &nbsp; Campamento de Verano · Junio–Agosto 2026</div>
+    <h1 class="hero-title">Verano de<span class="hl">la Vega</span></h1>
+    <p class="hero-sub">Donde la diversión, el aprendizaje y la aventura se unen para crear recuerdos que duran toda la vida.</p>
+    <div class="hero-btns">
+      <a href="#contacto" class="btn-p">¡Apunta a tu peque! 🚀</a>
+      <a href="#actividades" class="btn-o">Ver actividades</a>
+    </div>
+    <div class="hero-tags">
+      <span class="hero-tag">Para edades 5–14 años</span>
+      <span class="hero-tag">Piscina con tobogán</span>
+      <span class="hero-tag">Fútbol 7 y pádel</span>
+    </div>
+  </div>
+  <div class="hero-wave">
+    <svg viewBox="0 0 1440 72" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0,36 C180,72 360,0 540,36 C720,72 900,0 1080,36 C1260,72 1350,18 1440,36 L1440,72 L0,72 Z" fill="#0C4A6E"/>
+    </svg>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat-item reveal d1"><div class="stat-num" data-target="5">0</div><div class="stat-lbl">Años mínimos</div></div>
+    <div class="stat-item reveal d2"><div class="stat-num" data-target="14">0</div><div class="stat-lbl">Años máximos</div></div>
+    <div class="stat-item reveal d3"><div class="stat-num" data-target="4">0</div><div class="stat-lbl">Grupos de actividades</div></div>
+    <div class="stat-item reveal d4"><div class="stat-num" data-target="275">0</div><div class="stat-lbl">€/mes todo incluido</div></div>
+  </div>
+</div>
+
+<!-- WAVE: dark→cream -->
+<span class="wdiv" style="background:var(--ocean-deep)">
+  <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,28 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#FFFBEB"/>
+  </svg>
+</span>
+
+<!-- ABOUT -->
+<section class="about" id="nosotros">
+  <div class="inner">
+    <div class="about-grid">
+      <div class="about-img-wrap rev-l">
+        <img src="https://verano-de-la-vega.vercel.app/IMG/Casa.webp" alt="Instalaciones Verano de la Vega" class="about-img">
+        <div class="about-badge">🌞 Verano 2026<br>¡Plazas abiertas!</div>
+      </div>
+      <div class="about-text rev-r">
+        <span class="s-tag">Sobre nosotros</span>
+        <h2 class="s-title">Un verano lleno de <span class="ac">aventura</span> y aprendizaje</h2>
+        <p class="s-desc">Verano de la Vega es mucho más que un campamento. Somos un espacio donde los niños de 5 a 14 años descubren nuevas pasiones, refuerzan sus estudios y se divierten en un entorno seguro y estimulante.</p>
+        <p class="s-desc">Combinamos apoyo escolar con talleres creativos, deporte, piscina, programación y actividades culturales para que cada día sea una nueva aventura.</p>
+        <div class="about-feats">
+          <div class="about-feat"><span class="feat-ic">🏊</span>Piscina con tobogán</div>
+          <div class="about-feat"><span class="feat-ic">⚽</span>Campo de fútbol 7</div>
+          <div class="about-feat"><span class="feat-ic">🎾</span>Pista de pádel</div>
+          <div class="about-feat"><span class="feat-ic">📚</span>Refuerzo escolar</div>
+          <div class="about-feat"><span class="feat-ic">🎭</span>Teatro y talleres</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE: cream→white -->
+<span class="wdiv" style="background:var(--cream)">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,24 C480,48 960,0 1440,24 L1440,48 L0,48 Z" fill="#fff"/>
+  </svg>
+</span>
+
+<!-- ACTIVITIES -->
+<section class="activities" id="actividades">
+  <div class="inner">
+    <div class="acts-hdr">
+      <span class="s-tag reveal">Qué hacemos</span>
+      <h2 class="s-title reveal d1">Un programa completo para <span class="ac">cada niño</span></h2>
+    </div>
+    <div class="acts-grid">
+      <div class="act-card c1 reveal d1">
+        <span class="act-icon">📚</span>
+        <h3 class="act-title">Refuerzo Escolar</h3>
+        <p class="act-desc">Apoyo en todas las materias, inglés y preparación de exámenes. El verano es el momento ideal para consolidar lo aprendido y llegar al siguiente curso con ventaja.</p>
+        <span class="act-tag">Todos los grupos · Lunes y Martes</span>
+      </div>
+      <div class="act-card c2 reveal d2">
+        <span class="act-icon">🎭</span>
+        <h3 class="act-title">Talleres Culturales</h3>
+        <p class="act-desc">Cine, teatro, manualidades, danza, debate… Cada semana una temática diferente para despertar la creatividad y la expresión de los más pequeños.</p>
+        <span class="act-tag">Todos los grupos · Mié y Vie</span>
+      </div>
+      <div class="act-card c4 reveal d4">
+        <span class="act-icon">🏊</span>
+        <h3 class="act-title">Deporte y Piscina</h3>
+        <p class="act-desc">Piscina con tobogán, campo de fútbol de hierba artificial 7v7 y pista de pádel. Actividad física diaria en instalaciones de primer nivel.</p>
+        <span class="act-tag">Todos los grupos · A diario</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE: white→ocean-deep -->
+<span class="wdiv" style="background:#fff">
+  <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,0 C360,56 1080,0 1440,28 L1440,56 L0,56 Z" fill="#0C4A6E"/>
+  </svg>
+</span>
+
+<!-- GALLERY -->
+<section class="gallery" id="galeria">
+  <div class="inner">
+    <div class="gal-hdr">
+      <span class="s-tag reveal">Nuestras instalaciones</span>
+      <h2 class="s-title reveal d1">Un espacio para <span style="color:var(--sun)">disfrutar</span></h2>
+    </div>
+    <div class="gal-grid">
+      <div class="gal-item reveal d1">
+        <img src="/assets/Piscina.jpeg" alt="Piscina Verano de la Vega" loading="lazy">
+        <div class="gal-overlay"><span class="gal-lbl">🏊 Piscina con tobogán</span></div>
+      </div>
+      <div class="gal-item reveal d2">
+        <img src="/assets/Casa.webp" alt="Instalaciones" loading="lazy">
+        <div class="gal-overlay"><span class="gal-lbl">🏠 Nuestras instalaciones</span></div>
+      </div>
+      <div class="gal-item reveal d3">
+        <img src="/assets/Piscina-2.jpeg" alt="Piscina 2" loading="lazy">
+        <div class="gal-overlay"><span class="gal-lbl">💦 Diversión asegurada</span></div>
+      </div>
+      <div class="gal-item reveal d4">
+        <img src="/assets/Campo.webp" alt="Campo de fútbol" loading="lazy">
+        <div class="gal-overlay"><span class="gal-lbl">⚽ Campo de fútbol 7</span></div>
+      </div>
+      <div class="gal-item reveal d5">
+        <img src="/assets/Decoracion-1.jpeg" alt="Ambiente" loading="lazy">
+        <div class="gal-overlay"><span class="gal-lbl">🎨 Ambiente veraniego</span></div>
+      </div>
+      <div class="gal-item reveal d6">
+        <img src="/assets/Decoracion-2.jpeg" alt="Decoración" loading="lazy">
+        <div class="gal-overlay"><span class="gal-lbl">🌞 Un espacio único</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE: ocean-deep→light blue -->
+<span class="wdiv" style="background:var(--ocean-deep)">
+  <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,28 C240,0 480,56 720,28 C960,0 1200,56 1440,28 L1440,56 L0,56 Z" fill="#F0F9FF"/>
+  </svg>
+</span>
+
+<!-- SCHEDULE -->
+<section class="schedule" id="horario">
+  <div class="inner">
+    <div class="sched-hdr">
+      <span class="s-tag reveal">Organización</span>
+      <h2 class="s-title reveal d1">Horario por <span class="ac">grupos</span></h2>
+      <p class="s-desc reveal d2" style="margin:14px auto 0;text-align:center">Actividades diseñadas según la edad para el máximo aprovechamiento y diversión.</p>
+    </div>
+    <div class="sched-groups">
+      <div class="sched-group ga rev-l">
+        <div class="sched-gh">
+          <span class="gh-icon">🐣</span>
+          <div><div class="gh-title">Grupo A</div><div class="gh-age">5 a 9 años</div></div>
+        </div>
+        <table class="sched-tbl">
+          <tr><td>09:00–10:30</td><td>Lun/Mar: Deberes &amp; Refuerzo · Mié: Taller · Jue: Teatro · Vie: Temática</td></tr>
+          <tr><td>10:30–11:15</td><td>Descanso y merienda ☕</td></tr>
+          <tr><td>11:15–12:30</td><td>Actividad física y ocio 🏃</td></tr>
+          <tr><td>12:30–13:30</td><td>Piscina 🏊</td></tr>
+          <tr><td>13:30–14:15</td><td>Ducha + Recogida 👋</td></tr>
+        </table>
+      </div>
+      <div class="sched-group gb rev-r">
+        <div class="sched-gh">
+          <span class="gh-icon">🦁</span>
+          <div><div class="gh-title">Grupo B</div><div class="gh-age">10 a 14 años</div></div>
+        </div>
+        <table class="sched-tbl">
+          <tr><td>09:00–10:30</td><td>Actividad física y ocio 🏃</td></tr>
+          <tr><td>10:30–11:15</td><td>Descanso y merienda ☕</td></tr>
+          <tr><td>11:15–12:30</td><td>Piscina 🏊</td></tr>
+          <tr><td>12:45–13:30</td><td>Lun/Mar: Deberes/Refuerzo  · Mie/Jue: Temática · Vie: Debate</td></tr>
+          <tr><td>13:30–14:15</td><td>Actividad libre + Recogida 👋</td></tr>
+        </table>
+      </div>
+    </div>
+    <div class="sched-note reveal">
+      <span class="note-icon">⏰</span>
+      <div>
+        <div class="note-title">Servicio de madrugadores y tarde</div>
+        <p class="note-desc">Disponible de <strong>8:00 a 9:00</strong> (madrugadores) y de <strong>14:00 a 15:00</strong> (tarde) por <strong>10 €/sesión</strong>. Si contratas ambas, el precio es de <strong>15 €/día</strong>. Ideal para familias con horarios exigentes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE: light blue→cream -->
+<span class="wdiv" style="background:#F0F9FF">
+  <svg viewBox="0 0 1440 48" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,24 C360,48 1080,0 1440,24 L1440,48 L0,48 Z" fill="#FFFBEB"/>
+  </svg>
+</span>
+
+<!-- PRICING -->
+<section class="pricing" id="precios">
+  <div class="inner">
+    <div class="price-hdr">
+      <span class="s-tag reveal">Tarifas</span>
+      <h2 class="s-title reveal d1">Elige el plan que <span class="ac">más te conviene</span></h2>
+      <p class="s-desc reveal d2" style="margin:14px auto 0;text-align:center">Precios claros, sin sorpresas.</p>
+    </div>
+    <div class="price-grid">
+      <div class="price-card reveal d1">
+        <div class="price-per">Por día</div>
+        <div class="price-amt"><sup>€</sup>25</div>
+        <div class="price-note">Días sueltos</div>
+      </div>
+      <div class="price-card reveal d2">
+        <div class="price-per">Por semana</div>
+        <div class="price-amt"><sup>€</sup>100</div>
+        <div class="price-note">5 días consecutivos</div>
+      </div>
+      <div class="price-card feat reveal d3">
+        <span class="feat-badge">⭐ Más popular</span>
+        <div class="price-per">Mensual</div>
+        <div class="price-amt"><sup>€</sup>275</div>
+        <div class="price-note">Mejor precio por día</div>
+      </div>
+      <div class="price-card reveal d4">
+        <div class="price-per">Quincena</div>
+        <div class="price-amt"><sup>€</sup>150</div>
+        <div class="price-note">15 días</div>
+      </div>
+    </div>
+    <div class="price-extras reveal d5">
+      <span class="ex-icon">🌅</span>
+      <div>
+        <div class="ex-title">Ampliación horaria</div>
+        <ul class="ex-list">
+          <li>Madrugadores (8:00–9:00) → 10 €/día</li>
+          <li>Tarde (14:00–15:00) → 10 €/día</li>
+          <li>Ambos servicios → 15 €/día</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE: cream→ocean-deep -->
+<span class="wdiv" style="background:var(--cream)">
+  <svg viewBox="0 0 1440 56" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+    <path d="M0,28 C360,0 1080,56 1440,28 L1440,56 L0,56 Z" fill="#0C4A6E"/>
+  </svg>
+</span>
+
+<!-- CONTACT -->
+<section class="contact" id="contacto">
+  <div class="inner">
+    <div class="contact-wrap">
+      <div class="ct-text rev-l">
+        <h2>¿Listo para un verano <span class="ac">increíble?</span></h2>
+        <p>Escríbenos por WhatsApp o mándanos un email. Estamos encantados de resolver cualquier duda y reservar la plaza de tu peque.</p>
+      </div>
+      <div class="ct-cards rev-r">
+        <a href="https://wa.me/34633670590" target="_blank" rel="noopener" class="ct-card wa">
+          <div class="ct-ic">💬</div>
+          <div><div class="ct-lbl">WhatsApp</div><div class="ct-val">+34 633 670 590</div></div>
+        </a>
+ 
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="foot-logo">☀️ Verano de la Vega</div>
+  <p>© 2025 Summer School Verano de la Vega · Todos los derechos reservados</p>
+</footer>
+
+<script>
+// Nav scroll effect
+const nav = document.getElementById('nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 50), {passive:true});
+
+// Mobile menu
+function openMM(){ document.getElementById('mm').classList.add('open'); document.body.style.overflow='hidden'; }
+function closeMM(){ document.getElementById('mm').classList.remove('open'); document.body.style.overflow=''; }
+
+// Intersection Observer — reveal
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ e.target.classList.add('vis'); obs.unobserve(e.target); }
+  });
+}, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal,.rev-l,.rev-r').forEach(el => obs.observe(el));
+
+// Counter animation
+function counter(el, to, dur=1100){
+  const start = performance.now();
+  const tick = now => {
+    const p = Math.min((now-start)/dur,1);
+    const eased = 1-Math.pow(1-p,3);
+    el.textContent = Math.round(eased*to);
+    if(p<1) requestAnimationFrame(tick); else el.textContent = to;
+  };
+  requestAnimationFrame(tick);
+}
+const cobs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){ counter(e.target, +e.target.dataset.target); cobs.unobserve(e.target); }
+  });
+}, {threshold:0.5});
+document.querySelectorAll('[data-target]').forEach(el => cobs.observe(el));
+
+// Parallax floats
+const floats = document.querySelectorAll('.float-el');
+window.addEventListener('scroll', () => {
+  if(scrollY > innerHeight) return;
+  floats.forEach((el,i) => {
+    el.style.transform = `translateY(${-scrollY*(0.07+i*0.025)}px)`;
+  });
+}, {passive:true});
+</script>
+</body>
+</html>
